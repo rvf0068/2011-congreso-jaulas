@@ -15,14 +15,14 @@
 \usepackage{tikz}
 \usetikzlibrary{calc,3d}
 \usepackage{tkz-berge}
-\usepackage{tkz-berge-add}
+%\usepackage{tkz-berge-add}
 \usepackage{graphiso}
 
 \usepackage{mathabx}
 \usepackage{amsmath}
 
 \usepackage[T1]{fontenc}
-\usepackage[latin1]{inputenc}
+\usepackage[utf8]{inputenc}
 
 \usepackage{booktabs}
 
@@ -41,13 +41,13 @@
 \DeclareMathOperator{\rec}{rec}
 
 \newtheorem{teorema}{Teorema}
-\newtheorem{proposicion}{ProposiciÛn}
+\newtheorem{proposicion}{Proposici√≥n}
 \newtheorem{corolario}{Corolario}
 \newtheorem{conjetura}{Conjetura}
 
 \theoremstyle{definition}
 \newtheorem{definiciones}{Definiciones}
-\newtheorem{definicion}{DefiniciÛn}
+\newtheorem{definicion}{Definici√≥n}
 \newtheorem{ejemplo}{Ejemplo}
 
 \SetVertexNotLabeledSmall
@@ -109,8 +109,8 @@
 \author{Rafael Villarroel Flores}
 
 \institute{%
-  ¡rea AcadÈmica de Matem·ticas y FÌsica\\
-  Universidad AutÛnoma del Estado de Hidalgo}
+  √Årea Acad√©mica de Matem√°ticas y F√≠sica\\
+  Universidad Aut√≥noma del Estado de Hidalgo}
 
 %\date{6 de octubre de 2011}  congreso SLP
 \date{8 de noviembre de 2011}  % seminario IMATE
@@ -121,14 +121,14 @@
   \titlepage
 \end{frame}
 
-\begin{defnframe}{Nuestras gr·ficas}
-  En Èsta pl·tica consideraremos sÛlo gr·ficas simples (no dirigidas,
-  sin lazos, sin aristas m˙ltiples)
+\begin{defnframe}{Nuestras gr√°ficas}
+  En √©sta pl√°tica consideraremos s√≥lo gr√°ficas simples (no dirigidas,
+  sin lazos, sin aristas m√∫ltiples)
 \end{defnframe}
 
 \begin{frame}
   \begin{definicion}
-    El \alert{cuello} de una gr·fica es la longitud de su ciclo m·s pequeÒo.
+    El \alert{cuello} de una gr√°fica es la longitud de su ciclo m√°s peque√±o.
   \end{definicion}
   \pause
   \begin{overlayarea}{\textwidth}{5cm}
@@ -150,8 +150,8 @@
   \vspace*{-0.5cm}
   % 1
   \begin{definicion}
-    El \alert{grado} de un vÈrtice es la cantidad de sus vecinos. Una
-    gr·fica es \alert{regular} si todos sus vÈrtices tienen el mismo grado.
+    El \alert{grado} de un v√©rtice es la cantidad de sus vecinos. Una
+    gr√°fica es \alert{regular} si todos sus v√©rtices tienen el mismo grado.
   \end{definicion}
 
   \pause\bigskip 
@@ -188,13 +188,13 @@
 \end{frame}
 
 \begin{defnframe}{$k$-regular}
-  Una gr·fica es \alert{$k$-regular} si es regular y todos sus
-  vÈrtices tienen grado~$k$.
+  Una gr√°fica es \alert{$k$-regular} si es regular y todos sus
+  v√©rtices tienen grado~$k$.
 \end{defnframe}
 
 \begin{frame}
   \begin{definicion}
-    Una \alert{$(k,g)$-gr·fica} es una gr·fica regular de grado $k$ y
+    Una \alert{$(k,g)$-gr√°fica} es una gr√°fica regular de grado $k$ y
     cuello $g$.
   \end{definicion}
 \end{frame}
@@ -232,20 +232,20 @@
   \begin{quote}
     \textbf{Teorema:}
     
-    Para todos $k\geq3$, $g\geq3$ existe una $(k,g)$-gr·fica.
+    Para todos $k\geq3$, $g\geq3$ existe una $(k,g)$-gr√°fica.
 
     \hfill--- Sachs (1963)
   \end{quote}
 \end{frame}
 
 \begin{defnframe}{$(k,g)$-jaula}
-    Una \alert{$(k,g)$-jaula} es una $(k,g)$-gr·fica $G$ tal que si
-    $G'$ es cualquier $(k,g)$-gr·fica, entonces $|G|\leq |G'|$.  
+    Una \alert{$(k,g)$-jaula} es una $(k,g)$-gr√°fica $G$ tal que si
+    $G'$ es cualquier $(k,g)$-gr√°fica, entonces $|G|\leq |G'|$.  
 \end{defnframe}
 
 \begin{frame}
   \begin{teorema}
-    Sea $G$ una $(k,g)$-gr·fica y
+    Sea $G$ una $(k,g)$-gr√°fica y
     \begin{equation*}
       M(k,g)=
       \begin{cases}
@@ -278,7 +278,7 @@
       \EdgeM[shows=4,starts=5,stops=14]{x0}{y2}
       \EdgeM[shows=5,starts=6,stops=14]{x1}{y2}
       \only<5->{\Edge(x1)(y1)}
-      \only<14>{\graphcaption{1.5}{-1}{⁄nica $(3,4)$-jaula}}
+      \only<14>{\graphcaption{1.5}{-1}{√önica $(3,4)$-jaula}}
     \end{tikzpicture}
   \end{center}
 \end{frame}
@@ -320,7 +320,7 @@
 
       \EdgeM[shows=8,starts=10,stops=20]{c0}{d1}
       \only<9->{\Edge(c1)(d0)}
-      \only<20>{\graphcaption{0}{-3.5}{⁄nica $(3,5)$-jaula}}
+      \only<20>{\graphcaption{0}{-3.5}{√önica $(3,5)$-jaula}}
     \end{tikzpicture}
   \end{center}
 \end{frame}
@@ -348,19 +348,19 @@
   \end{minipage}
 \end{frame}
 
-\begin{defnframe}{gr·fica de Moore}
-  Si $G$ es una~$(k,g)$-gr·fica con~$M(k,g)$ vÈrtices, decimos que~$G$
-  es una \alert{gr·fica de Moore}.
+\begin{defnframe}{gr√°fica de Moore}
+  Si $G$ es una~$(k,g)$-gr√°fica con~$M(k,g)$ v√©rtices, decimos que~$G$
+  es una \alert{gr√°fica de Moore}.
 \end{defnframe}
 
 \begin{frame}
   \begin{teorema}
     \begin{columns}
       \begin{column}{0.72\textwidth}
-        Existe una gr·fica de Moore si y sÛlo si:
+        Existe una gr√°fica de Moore si y s√≥lo si:
         \begin{itemize}
         \item<+-> $k=2$, $g\geq 3$ (ciclos)
-        \item<+-> $g=3$, $k\geq 2$ (gr·ficas completas)
+        \item<+-> $g=3$, $k\geq 2$ (gr√°ficas completas)
         \item<+-> $g=4$, $k\geq 2$ (bipartitas completas)
         \item<+-> $g=5$,
           \begin{itemize}
@@ -430,12 +430,12 @@
 \begin{frame}
   \begin{columns}
     \begin{column}{0.55\textwidth}
-      No existe una $(7,3)$-gr·fica $G$ con $M(7,3)=22$ vÈrtices.
+      No existe una $(7,3)$-gr√°fica $G$ con $M(7,3)=22$ v√©rtices.
 
-      \uncover<2->{Sea $x$ un vÈrtice de una tal~$G$. }
+      \uncover<2->{Sea $x$ un v√©rtice de una tal~$G$. }
       \uncover<3->{Contemos la cantidad de $7$-ciclos que incluyen a
         $x$. }
-      \uncover<4->{Hay exactamente uno por cada arista entre vÈrtices
+      \uncover<4->{Hay exactamente uno por cada arista entre v√©rtices
         marcados. }
       \uncover<7->{Por lo tanto, hay $\frac{12\cdot 2}{2}=12$
         $7$-ciclos pasando por~$x$. }
@@ -459,11 +459,11 @@
 \end{frame}
 
 \begin{frame}
-  Sea $n(k,g)$ la cantidad de vÈrtices de una $(k,g)$-jaula.
+  Sea $n(k,g)$ la cantidad de v√©rtices de una $(k,g)$-jaula.
 
   \pause\bigskip
 
-  Por ejemplo, $n(k,g)=M(k,g)$ si y sÛlo si hay una $(k,g)$ gr·fica de
+  Por ejemplo, $n(k,g)=M(k,g)$ si y s√≥lo si hay una $(k,g)$ gr√°fica de
   Moore.
 
   \pause\bigskip
@@ -472,7 +472,7 @@
 
   \pause\bigskip
 
-  Por el \alert{teorema fundamental de la teorÌa de gr·ficas},
+  Por el \alert{teorema fundamental de la teor√≠a de gr√°ficas},
   $n(3,7)\neq 23$.
 
   \pause\bigskip
@@ -546,8 +546,8 @@
       \MEdge{10}{17}
       \MEdge{14}{15}
       \MEdge{20}{21}
-      \only<16>{\graphcaption{0}{-5}{⁄nica $(3,7)$-jaula:
-          \alert{gr·fica de McGee}}}
+      \only<16>{\graphcaption{0}{-5}{√önica $(3,7)$-jaula:
+          \alert{gr√°fica de McGee}}}
     \end{tikzpicture}
   \end{center}
 \end{frame}
@@ -572,13 +572,13 @@
 
     \pause\bigskip
 
-    Para ning˙n otro $g\geq13$ se conoce el valor de $n(3,g)$.
+    Para ning√∫n otro $g\geq13$ se conoce el valor de $n(3,g)$.
   \end{center}
 \end{frame}
 
 
 \begin{frame}
-  Sea $\rec(k,g)$ la cantidad de vÈrtices de la menor $(k,g)$-gr·fica 
+  Sea $\rec(k,g)$ la cantidad de v√©rtices de la menor $(k,g)$-gr√°fica 
   conocida. 
 
   \pause\bigskip 
@@ -631,23 +631,24 @@ Tabla de resultados
 \end{imageframe}
 
 \begin{frame}
-  Proceso para construir $(k,g)$-gr·ficas, comenzando por una gr·fica
+  \setbeamerfont{enumerate item}{size=\large}
+  Proceso para construir $(k,g)$-gr√°ficas, comenzando por una gr√°fica
   dada.
 
   \bigskip
 
   \begin{scriptsize}
     \begin{enumerate}
-    \item \texttt{mientras haya vÈrtices de grado $<k$}
+    \item \texttt{mientras haya v√©rtices de grado $<k$}
     \item \texttt{ { }{ }{ }mientras haya aristas ``disponibles''}
     \item \texttt{ { }{ }{ } { }{ }{ }para cada arista ``disponible''}
     \item \texttt{ { }{ }{ } { }{ }{ }  { }{ }{ }%
-        calcula la suma de los grados de sus vÈrtices}
+        calcula la suma de los grados de sus v√©rtices}
     \item \texttt{ { }{ }{ } { }{ }{ }%
         escoge la arista con suma mayor, al azar si hay empates}
-    \item \texttt{ { }{ }{ } { }{ }{ }aÒade la arista escogida}
-    \item \texttt{ { }{ }{ }si todos los vÈrtices tienen grado $k$}
-    \item \texttt{ { }{ }{ } { }{ }{ }salva la gr·fica, terminamos}
+    \item \texttt{ { }{ }{ } { }{ }{ }a√±ade la arista escogida}
+    \item \texttt{ { }{ }{ }si todos los v√©rtices tienen grado $k$}
+    \item \texttt{ { }{ }{ } { }{ }{ }salva la gr√°fica, terminamos}
     \item \texttt{ { }{ }{ }quita 1,2 o 3 aristas}
     \end{enumerate}
   \end{scriptsize}
@@ -707,7 +708,7 @@ def EdgeValidInCage(X,e,g,k):
 \end{frame}
 
 \begin{frame}[fragile]
-  Para escoger aristas a aÒadir:
+  Para escoger aristas a a√±adir:
 
   \bigskip
   
@@ -722,7 +723,7 @@ def DegreeSumMax(X,edgelist,ntry):
 \end{frame}
 
 \begin{frame}[fragile]
-  Para aumentar aristas sucesivamente a una gr·fica:
+  Para aumentar aristas sucesivamente a una gr√°fica:
 
   \bigskip
   
